@@ -1,0 +1,35 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="10dp"
+    android:paddingRight="5dp"
+    android:paddingLeft="12dp"
+    android:paddingBottom="5dp"
+    android:orientation="horizontal"
+    android:background="@color/title_blue"
+    tools:context=".ProductListActivity" >
+        
+      <TextView 
+        style="@style/style_TextView_black"
+        android:text="@string/lbl_product_id"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:id="@+id/productIdShiftReportItemTextView"
+	        android:layout_width="90dp"
+	        android:gravity="left"/>
+         <TextView 
+	        style="@style/style_TextView_black"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/lbl_quantity"/>
+         
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:layout_width="0dp"
+            android:layout_weight="1"
+            android:gravity="left"
+            android:layout_marginLeft="5dp"
+            android:singleLine="true"
+	        android:id="@+id/quantityShiftReportItemTextView"/>
+            
+</LinearLayout>

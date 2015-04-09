@@ -1,0 +1,100 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    android:orientation="horizontal"
+    android:gravity="center_vertical"
+    android:background="@color/title_blue"
+    tools:context=".ProductListActivity" >
+      
+   <!--  <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+        <TextView 
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_product_code"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:id="@+id/productCodeTextView"
+	        android:layout_width="60dp"
+	        android:gravity="center"/>
+        <TextView 
+	        style="@style/style_TextView_black_bold"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/lbl_product_rate"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:layout_width="60dp"
+	        android:gravity="center"
+	        android:id="@+id/productRateTextView"/>
+    </LinearLayout> -->
+
+  <!--   <LinearLayout 
+        android:id="@+id/ll_item_backgroud"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="15dp"
+        android:orientation="horizontal"> -->
+        <!-- <TextView 
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_product_name"/> -->
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:id="@+id/productNameTextView"
+	        android:layout_width="0dp"
+	        android:layout_weight="1"
+	        android:singleLine="true"
+	        android:ellipsize="end"
+	        android:paddingLeft="5dp"
+	        android:gravity="left"/>
+         
+          <TextView 
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_qty"
+        android:textColor="@android:color/white"/>
+         <EditText
+	        android:id="@+id/quantityEditText"
+	        android:layout_width="120dp"
+	        android:layout_height="wrap_content"
+	        android:inputType="number"
+	        android:textSize="16sp"
+	        android:hint="@string/lbl_hint_enter_quantity"
+	        android:gravity="center"/>
+         
+         
+    
+   <!--  <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="8dp"
+        android:orientation="horizontal">
+        <TextView 
+        style="@style/style_TextView_black_bold"
+        android:text="@string/lbl_qty"/>
+         <EditText
+	        style="@style/style_TextView_white"
+	        android:id="@+id/quantityEditText"
+	        android:layout_width="130dp"
+	        android:inputType="number"
+	        android:hint="@string/lbl_hint_enter_quantity"
+	        android:textColor="@android:color/black"
+	        android:gravity="center"/>
+        <TextView 
+	        style="@style/style_TextView_black_bold"
+	        android:layout_marginLeft="10dp"
+	        android:text="@string/lbl_total"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:layout_width="100dp"
+	        android:id="@+id/TotalTextView"/>
+    </LinearLayout>  -->
+    <!-- <View android:layout_width="match_parent"
+        android:layout_height="0.5dp"
+        android:layout_marginTop="4dp"
+        android:background="@android:color/black"/> -->
+</LinearLayout>

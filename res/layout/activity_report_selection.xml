@@ -1,0 +1,110 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="@android:color/white"
+    tools:context=".LoginActivity">
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/icon_top_bar">
+        
+        <LinearLayout android:layout_height="match_parent"
+            android:layout_width="70dp"
+            android:orientation="vertical"
+            android:gravity="center">
+            
+            <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_blue"
+            android:textSize="12sp"
+            android:textStyle="bold"
+            android:text="@string/app_name_samudra"/>
+            
+            <!-- <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/title_blue"
+            android:layout_marginTop="2dp"
+            android:textSize="8sp"
+            android:text="@string/app_name_technologies"/> -->
+            
+        </LinearLayout>
+        <View android:layout_height="1dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"/>
+        <!-- <ImageButton 
+            android:id="@+id/home_back_IB"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginRight="20dp"
+            android:contentDescription="@string/app_name"
+            android:layout_gravity="center_vertical"
+            android:background="@drawable/icon_back"/> -->
+    </LinearLayout>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="vertical"
+        android:layout_weight="1"
+        android:paddingLeft="20dp"
+        android:paddingTop="10dp"
+        android:background="@drawable/bg_splash_full">
+        
+         <RadioGroup
+        android:id="@+id/radioHistoryReportGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" 
+        android:orientation="vertical">
+ 
+        <RadioButton
+            android:id="@+id/radioReportHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_report_history" 
+            android:checked="true" />
+ 
+        <RadioButton
+            android:id="@+id/radioDocHistory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/lbl_doc_history" />
+        </RadioGroup>
+        
+        <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:text="@string/lbl_from_date"/>
+        <EditText 
+            android:id="@+id/fromDateEditText"
+            android:layout_width="250dp"
+            android:inputType="date"
+            android:layout_height="wrap_content"/>
+        
+         <TextView android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:text="@string/lbl_to_date"/>
+         <EditText 
+            android:id="@+id/toDateEditText"
+            android:layout_width="250dp"
+            android:inputType="date"
+            android:layout_height="wrap_content"/> 
+ 
+        <TextView 
+	         android:id="@+id/generateReport_textView"
+	         android:layout_width="160dp"
+	         android:layout_height="40dp"
+	         android:layout_marginTop="20dp"
+	         android:text="@string/lbl_generate_report"
+	         android:textSize="16sp"
+	         android:textStyle="bold"
+	         android:gravity="center"   
+	         android:layout_gravity="center_horizontal"
+	         android:textColor="@android:color/white"
+	         android:background="@drawable/icon_btn_login"/>
+          
+   </LinearLayout> 
+</LinearLayout>

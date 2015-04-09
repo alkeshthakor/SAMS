@@ -1,0 +1,97 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity" >
+
+    <include layout="@layout/layout_top_bar" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@drawable/bg_splash_full"
+        android:orientation="vertical"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp" >
+
+        <TextView
+            android:id="@+id/home_booth_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_pink"
+            android:gravity="center"
+            android:text="@string/lbl_booth"
+            android:textColor="@color/white_bg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home_supplay_chain_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_nami_blue"
+            android:gravity="center"
+            android:text="@string/lbl_supplay_chain"
+            android:textColor="@color/white_bg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home_admin_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_orenge"
+            android:gravity="center"
+            android:text="@string/lbl_admin"
+            android:textColor="@color/white_bg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/home_utilites_tv"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="5dp"
+            android:background="@color/color_green"
+            android:gravity="center"
+            android:text="@string/lbl_main_utilites"
+            android:textColor="@color/white_bg"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <!--
+          <TextView 
+         android:id="@+id/newOrder_textView"
+         android:layout_width="105dp"
+         android:layout_height="40dp"
+         android:layout_marginBottom="10dp"
+         android:text="@string/lbl_new_order"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:gravity="center"
+         android:textColor="@android:color/white"
+         android:background="@drawable/icon_btn_login"/>
+     
+      <TextView 
+         android:id="@+id/report_textView"
+         android:layout_width="105dp"
+         android:layout_height="40dp"
+         android:text="@string/lbl_report"
+         android:textSize="16sp"
+         android:textStyle="bold"
+         android:gravity="center"
+         android:layout_marginTop="10dp"
+         android:textColor="@android:color/white"
+         android:background="@drawable/icon_btn_login"/>
+        -->
+
+    </LinearLayout>
+
+</LinearLayout>

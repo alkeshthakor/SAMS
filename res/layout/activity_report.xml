@@ -1,0 +1,88 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingTop="5dp"
+    android:paddingRight="0dp"
+    android:orientation="vertical"
+    android:background="@color/title_blue"
+    tools:context=".ProductListActivity" >
+    
+    <TextView 
+        style="@style/style_TextView_black"
+        android:layout_marginLeft="8dp"
+        android:text="@string/lbl_booth_detail"/>
+    
+    <LinearLayout android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="4dp"
+        android:orientation="horizontal">
+        <TextView 
+        style="@style/style_TextView_black"
+        android:text="@string/lbl_booth_id"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:id="@+id/boothIdReport"
+	        android:layout_width="50dp"
+	        android:gravity="right"/>
+        <TextView 
+	        style="@style/style_TextView_black"
+	        android:layout_marginLeft="20dp"
+	        android:text="@string/lbl_booth_area"/>
+         <TextView 
+	        style="@style/style_TextView_white"
+	        android:layout_marginLeft="4dp"
+	        android:id="@+id/boothAreaReport"/>
+    </LinearLayout>
+    <View android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="6dp"
+        android:background="@android:color/black"/>
+
+    <TextView
+        style="@style/style_TextView_black"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="5dp"
+        android:text="@string/lbl_report_shift"
+        android:textSize="16sp"
+        android:textStyle="bold" />
+    
+    <View android:layout_width="match_parent"
+        android:layout_height="4dp"
+        android:layout_marginTop="5dp"
+        android:background="@android:color/black"/>
+    
+   <!--  <LinearLayout android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+    	<ScrollView 
+    	android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout 
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+    </LinearLayout>
+    </ScrollView>
+    </LinearLayout> -->
+       <!--  <ListView 
+        android:id="@+id/productListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="5dp"
+        android:layout_weight="1">
+    </ListView> -->
+    
+     <ListView 
+        android:id="@+id/shiftReportListView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:dividerHeight="2dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="10dp"
+        android:layout_weight="1"/>
+         
+</LinearLayout>
